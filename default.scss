@@ -37,6 +37,6 @@
 // folder. For subfolders, the same thing should happen,
 // eg: helpers/variables/_variables.scss.
 
-// main.scss should only ever contain imports. It should import the files in each
+// default.scss should only ever contain imports. It should import the files in each
 // folder that import all the files in the folder (if that sounds complicated, 
 // just have a look at the code, it's v simple).
