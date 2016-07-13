@@ -1,0 +1,30 @@
+// ---- Color Definitions ---- //
+
+$white: #fff;
+$lightgray: #f9f9f9;
+$midgray: #ebebeb;
+$gray: #bbb;
+$darkgray: #777;
+$blackgray: #444;
+$black: $blackgray;
+
+$codogo-red: #ff5559;
+$knowt-green: #18bc9c;
+$knowt-navy: #2c3e50;
+
+@function tr($opacity) {
+	@return rgba(0,0,0,$opacity)
+};
+
+// ---- Color Settings ---- //
+
+$color-primary: $codogo-red;
+$color-secondary: $midgray;
+$color-accent: $black;
+
+$color-text: $black;
+$color-header: $color-text;
+$color-link: $color-primary;
+
+$color-bg: $white;
+$color-selection: $color-primary;

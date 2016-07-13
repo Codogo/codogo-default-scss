@@ -1,0 +1,97 @@
+@import 'normalize';
+
+*, *:before, *:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 0; 
+	padding: 0;
+}
+
+body, html {
+	overflow-x: hidden;
+	width: 100%;
+}
+
+body {	
+	background: $color-bg;
+	color: $color-text;
+	font-family: $font-default;
+	font-size: $font-size;
+	@include xs {
+		font-size: $font-size-xs
+	}
+	line-height: 1.4;	
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: $color-header;
+	font-family: $font-header;
+	margin: 0 0 $font-size;
+	@include xs {
+		margin: 0 0 $font-size-xs;
+	}
+	padding: 0;
+}
+
+a, a:hover, a:active, a:visited {
+	color: $color-link;
+	text-decoration: none;
+}
+
+p {
+	margin: 0 0 1em;
+}
+
+li {
+	list-style: none;
+	text-decoration: none;
+}
+
+// clearfix
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+::selection {
+	background: $color-selection;
+	color: $white;
+}
+
+// for js media query detection
+.is-xs, .is-sm, .is-md, is-lg {
+	display: none;
+	height: 0;
+	opacity: 0;
+	position: absolute;
+	visibility: hidden;
+	width: 0;
+	z-index: -1000;
+}
+
+@include xs {
+	.is-xs {
+		content: 'foo';
+	}
+}
+@include bp(sm, only) {
+	.is-sm {
+		content: 'foo';
+	}
+}
+@include bp(md, only) {
+	.is-md {
+		content: 'foo';
+	}
+}
+@include bp(lg, only) {
+	.is-lg {
+		content: 'foo';
+	}
+}
