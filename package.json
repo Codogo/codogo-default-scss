@@ -1,0 +1,16 @@
+{
+  "name": "codogo-default-scss",
+  "version": "0.1.0",
+  "description": "Codogo's default SASS files",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/codogo/codogo-default-scss.git"
+  },
+  "keywords": [
+    "SASS",
+    "codogo"
+  ],
+  "author": "",
+  "license": "Apache-2.0",
+  "homepage": "https://bitbucket.org/codogo/codogo-default-scss#readme"
+}
